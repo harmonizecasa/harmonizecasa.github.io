@@ -5,12 +5,15 @@ function listarDados(data) {
   data.forEach((item) => {
     const h3 = document.createElement("h3");
     h3.textContent = item.name;
+    const imgContent = document.createElement("div");
+    imgContent.classList.add("img-content");
     const img = document.createElement("img");
     img.src = item.image;
 
     const link = document.createElement("a");
     link.classList.add("product-item");
-    link.appendChild(img);
+    imgContent.appendChild(img);
+    link.appendChild(imgContent);
     link.appendChild(h3);
     link.href = item.link;
 
