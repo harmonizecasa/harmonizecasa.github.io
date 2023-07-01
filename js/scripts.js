@@ -19,7 +19,7 @@ function listarDados(data) {
 }
 
 function fazerRequisicao() {
-  const url = "http://localhost:3000/products"; // Substitua pela URL da sua API
+  const url = "https://harmonize-back-production.up.railway.app/products"; // Substitua pela URL da sua API
 
   fetch(url)
     .then((response) => response.json())
